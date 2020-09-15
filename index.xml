@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yongchun Zhu/朱勇椿</title>
+    <link>https://easezyc.github.io/</link>
+    <description>Recent content on Yongchun Zhu/朱勇椿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Yongchun Zhu</copyright><atom:link href="https://easezyc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://easezyc.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://easezyc.github.io/</guid>
+      <description>About me I am a 3th-year PhD candidate under the supervision of Prof. Fuzhen Zhuang at Machine Learning and Data Mining group, Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS).
+My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their application Recommender Systems.
+Email: zhuyongchun18s@ict.ac.cn &amp;amp; zhuyc0204@gmail.com
+Publications   A Comprehensive Survey on Transfer Learning
+Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui Xiong, Qing He.</description>
+    </item>
+    
+  </channel>
+</rss>
