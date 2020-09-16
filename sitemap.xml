@@ -3,12 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://easezyc.github.io/</loc>
-    <priority>0</priority>
+    <loc>https://easezyc.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://easezyc.github.io/categories/</loc>
+    <loc>https://easezyc.github.io/edu/</loc>
+  </url>
+  
+  <url>
+    <loc>https://easezyc.github.io/main/</loc>
+  </url>
+  
+  <url>
+    <loc>https://easezyc.github.io/others/</loc>
+  </url>
+  
+  <url>
+    <loc>https://easezyc.github.io/pub/</loc>
   </url>
   
   <url>

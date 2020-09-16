@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on Yongchun Zhu/朱勇椿</title>
+    <link>f://github//zhuycsite//public/others/</link>
+    <description>Recent content in Others on Yongchun Zhu/朱勇椿</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Yongchun Zhu</copyright><atom:link href="f://github//zhuycsite//public/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Others</title>
+      <link>f://github//zhuycsite//public/others/others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>f://github//zhuycsite//public/others/others/</guid>
+      <description>Email: zhuyongchun18s@ict.ac.cn &amp;amp; zhuyc0204@gmail.com
+Google Scholar: Yongchun Zhu
+DBLP: Yongchun Zhu
+Github: easezyc</description>
+    </item>
+    
+  </channel>
+</rss>

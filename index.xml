@@ -8,16 +8,57 @@
     <language>en-us</language>
     <copyright>Yongchun Zhu</copyright><atom:link href="https://easezyc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://easezyc.github.io/</link>
+      <title>Education</title>
+      <link>https://easezyc.github.io/edu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://easezyc.github.io/</guid>
+      <guid>https://easezyc.github.io/edu/</guid>
+      <description>2018.9-2020.9 Master in Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS)(中国科学院计算技术研究所)
+Supervisor: Fuzhen Zhuang
+Awards
+ 2020: ByteDance Summer Camp Champion(字节跳动夏令营冠军). 2020: Merit Student of ICT(中科院计算所三好学生). 2019: 4Paradigm Scholarship(One of the top scholarships in ICT, CAS)(第四范式奖学金). 2019: First-class Scholarship of CAS(中科院一等奖学金). 2019: AAAI2019 scholarship  2014.9-2018.6 Bachelor of Computer Science in Beijing Normal University (BNU)(北京师范大学)
+Awards
+ 2018: Beijing Outstanding Graduate (北京市优秀毕业生). 2017: Merit Student of BNU(北师大三好学生). 2017: Honorable Mention in Mathematical Contest In Modeling(世界大学生数学建模大赛H奖).</description>
+    </item>
+    
+    <item>
+      <title>Homepage</title>
+      <link>https://easezyc.github.io/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://easezyc.github.io/main/</guid>
       <description>About me I am a 3th-year PhD candidate under the supervision of Prof. Fuzhen Zhuang at Machine Learning and Data Mining group, Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS).
 My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their application Recommender Systems.
 Email: zhuyongchun18s@ict.ac.cn &amp;amp; zhuyc0204@gmail.com
 Publications   A Comprehensive Survey on Transfer Learning
 Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui Xiong, Qing He.</description>
+    </item>
+    
+    <item>
+      <title>Others</title>
+      <link>https://easezyc.github.io/others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://easezyc.github.io/others/</guid>
+      <description>Email: zhuyongchun18s@ict.ac.cn &amp;amp; zhuyc0204@gmail.com
+Google Scholar: Yongchun Zhu
+DBLP: Yongchun Zhu
+Github: easezyc</description>
+    </item>
+    
+    <item>
+      <title>Publication</title>
+      <link>https://easezyc.github.io/pub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://easezyc.github.io/pub/</guid>
+      <description>Conference papers   Neural Hierarchical Factorization Machines for User&amp;rsquo;s Event Sequence Analysis
+Dongbo Xi, Fuzhen Zhuang, Bowen Song, Yongchun Zhu, Shuai Chen, Tao Chen, Xi Gu, Qing He.
+In SIGIR2020. [Download paper]
+  Modeling Users&#39; Behavior Sequences with Hierarchical Explainable Network for Cross-domain Fraud Detection
+Yongchun Zhu, Dongbo Xi, Bowen Song, Fuzhen Zhuang, Shuai Chen, Xi Gu, Qing He.
+In TheWebConf2020. [Download paper]
+  Aligning Domain-specific Distribution and Classifier for Cross-domain Classification from Multiple Sources</description>
     </item>
     
   </channel>
