@@ -30,8 +30,7 @@ Awards
       <description>About me I am a 3th-year PhD candidate under the supervision of Prof. Fuzhen Zhuang at Machine Learning and Data Mining group, Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS).
 My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their application Recommender Systems.
 Email: zhuyongchun18s@ict.ac.cn &amp;amp; zhuyc0204@gmail.com
-Publications   A Comprehensive Survey on Transfer Learning
-Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, Yongchun Zhu, Hengshu Zhu, Hui Xiong, Qing He.</description>
+Publications   Modeling the Field Value Variations and Field Interactions Simultaneously for Fraud Detection</description>
     </item>
     
     <item>
@@ -52,13 +51,13 @@ Github: easezyc</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://easezyc.github.io/pub/</guid>
-      <description>Conference papers   Neural Hierarchical Factorization Machines for User&amp;rsquo;s Event Sequence Analysis
-Dongbo Xi, Fuzhen Zhuang, Bowen Song, Yongchun Zhu, Shuai Chen, Tao Chen, Xi Gu, Qing He.
-In SIGIR2020. [Download paper]
+      <description>Conference papers   Modeling the Field Value Variations and Field Interactions Simultaneously for Fraud Detection
+Dongbo Xi, Bowen Song, Fuzhen Zhuang, Yongchun Zhu, Shuai Chen, Tianyi Zhang, Yuan Qi, Qing He.
+In AAAI2021. [Download paper]
   Modeling Users&#39; Behavior Sequences with Hierarchical Explainable Network for Cross-domain Fraud Detection
 Yongchun Zhu, Dongbo Xi, Bowen Song, Fuzhen Zhuang, Shuai Chen, Xi Gu, Qing He.
 In TheWebConf2020. [Download paper]
-  Aligning Domain-specific Distribution and Classifier for Cross-domain Classification from Multiple Sources</description>
+  Neural Hierarchical Factorization Machines for User&amp;rsquo;s Event Sequence Analysis</description>
     </item>
     
   </channel>
