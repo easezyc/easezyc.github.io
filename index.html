@@ -1,253 +1,689 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!--
+ * @Author: Jon Barron
+ * @Date: 2019-05-11 22:15:22
+ * @Editors: whyisyoung
+ * @EditTime: 2020-10-23 10:57:25
+ * @Editors:sheng-qiang
+ * @EditTime: 2021-02-05 22:39:00
+ * @LastEditors:Yongchun Zhu
+ * @LastEditTime: 2022-03-22 23:03:00
+ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> Homepage </title>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="Homepage" />
-<meta property="og:description" content="About me I am a 3th-year PhD candidate under the supervision of Prof. Fuzhen Zhuang at Machine Learning and Data Mining group, Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS).
-My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their application Recommender Systems.
-Email: zhuyongchun18s@ict.ac.cn &amp; zhuyc0204@gmail.com
-Publications   Modeling the Field Value Variations and Field Interactions Simultaneously for Fraud Detection" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://easezyc.github.io/main/" />
+  <meta name=viewport content="width=device-width">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta name="google-site-verification" content="p7SNRHPF7y83Q-nNBLkrxFhAAosW2t40unwTxByZ0vo" />
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
 
+    a {
+      color: #1772d0;
+      /* color: #07889b; */
+      text-decoration: none;
+    }
+   
+    a.black {
+      color: #000000;
+      /* color: #07889b; */
+      text-decoration: none;
+    }
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Homepage"/>
-<meta name="twitter:description" content="About me I am a 3th-year PhD candidate under the supervision of Prof. Fuzhen Zhuang at Machine Learning and Data Mining group, Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS).
-My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their application Recommender Systems.
-Email: zhuyongchun18s@ict.ac.cn &amp; zhuyc0204@gmail.com
-Publications   Modeling the Field Value Variations and Field Interactions Simultaneously for Fraud Detection"/>
+    a:focus,
+    a:hover {
+      color: #e37222; /* #f09228; */
+      text-decoration: none;
+    }
 
-  
-  
-  
-  <link rel="stylesheet" href="https://easezyc.github.io/css/style-white.css">
-  
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px
+    }
 
-  
-<link rel="icon" type="image/png" href="https://easezyc.github.io/images/favicon.ico" />
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+    }
 
-  
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+      color: #e37222;
+    }
+
+    subheading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 18px;
+      font-style:italic;
+      color: #e37222;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .footer {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      opacity: 0.75;
+      color: #777;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+
+    span.artifact {
+      color:#6cb41b;
+      padding: 1px;
+    }
+
+    span.underline {
+      border-bottom:1px solid black;
+      padding-bottom:1px;
+    }
+
+    span.tldr {
+      color: #555555;
+    }
+
+    em.highlight {
+      color: #e37222;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/zhuyc_icon.ico">
+  <title>Yongchun Zhu's Homepage</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
-<body class="max-width mx-auto px3 ltr">
-  <div class="content index py4">
 
-    <header id="header">
-  <a href="https://easezyc.github.io/">
-  
-    <div id="logo" style="background-image: url(https://easezyc.github.io/images/logo.png)"></div>
-  
-  <div id="title">
-    <h1>Yongchun Zhu/朱勇椿</h1>
-  </div>
-  </a>
-  <div id="nav">
-    <ul>
-      <li class="icon">
-        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
-      </li>
+<body>
+  <table width="960" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <!-- Intro Begin -->
+        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 23%;">
+            <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="middle">
+              <img style="border-radius:50%;" src="images/zhuyongchun.png" height="170px">
+            </td>
+            <td valign="middle">
+              <p align="left">
+                <name>Yongchun Zhu 朱勇椿</name>
+              </p>
+              <p>
+                I am a 4th-year PhD candidate under the supervision of Prof. <a href="https://scholar.google.com.hk/citations?user=fSBdNg0AAAAJ&hl=zh-CN&oi=ao">Juan Cao</a> and Prof. <a href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a> at <a href="http://www.ict.ac.cn/">Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS)</a>. My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their applications, including Recommender Systems, Fake News Detection, Image Classification.
+              </p>
+              <p align=left>Contact: zhuyc0204 [AT] gmail [dot] com</p>
+              <p align=left>
+                <a href="https://github.com/easezyc"> GitHub </a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://scholar.google.com.hk/citations?user=iKUIgeQAAAAJ&hl=zh-CN">Google Scholar</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://www.researchgate.net/profile/Yongchun-Zhu-3">ResearchGate</a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://dblp.org/pid/56/11341.html"> DBLP </a> &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://www.zhihu.com/column/c_1351157132998406144"> Zhihu Column </a> 
+              </p>
+            </td>
+          </tr>
+        </table>
+        <!-- Intro End -->
+
+        <!-- News Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>News</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 23%;">
+            <col span="1" style="width: 77%;">
+          </colgroup>
+           <tr>
+            <td valign="center">
+              02/2022
+            </td>
+            <td valign="center">
+                One paper got accepted by ACL 2022.
+            </td>
+           </tr>
+           <tr>
+            <td valign="center">
+              01/2022
+            </td>
+            <td valign="center">
+                One paper got accepted by DASFAA 2022.
+            </td>
+           </tr>
+           <tr>
+            <td valign="center">
+              11/2021
+            </td>
+            <td valign="center">
+                Invited to serve as a PC Member for KDD 2022.
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              10/2021
+            </td>
+            <td valign="center">
+              One paper got accepted by WSDM 2022.
+            </td>
+          </tr>
+           <tr>
+            <td valign="center">
+              09/2021
+            </td>
+            <td valign="center">
+                Invited to serve as a PC Member for AAAI 2022.
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              08/2021
+            </td>
+            <td valign="center">
+              Invited to serve as a PC Member for WSDM 2022.
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              08/2021
+            </td>
+            <td valign="center">
+                One paper got accepted by CIKM 2021.
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              05/2021
+            </td>
+            <td valign="center">
+                Two papers got accepted by KDD 2021.
+            </td>
+          </tr>
+          <td>
+           <a href="news.html">Full List</a>
+          </td>
+          <td>
+          </td>
+         </tr>
+        </table>
+        <!-- News End -->
+
+        <!-- Publications Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Publications</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <!-- <colgroup>
+            <col span="1" style="width: 23%;">
+            <col span="1" style="width: 77%;">
+          </colgroup> -->
+          <td>
+            <subheading>2022</subheading>
+          </td>
+           <tr>
+            <td valign="center">
+              <span class="tag">[ACL 2022]</span>&nbsp;&nbsp;<papertitle>Zoom Out and Observe: News Environment Perception for Fake News Detection</papertitle>
+                <br>
+                <a class="black" href="https://sheng-qiang.github.io/">Qiang Sheng</a>, <a class="black" href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ">Juan Cao</a>, <a class="black" href="https://www.zhangxueyao.com/">Xueyao Zhang</a>, <a class="black" href="https://scholar.google.com/citations?user=PfmGvVQAAAAJ">Rundong Li</a>, <a class="black" href="https://scholar.google.com/citations?user=hGZwK0cAAAAJ">Danding Wang</a>, and <span class="underline">Yongchun Zhu</span>
+                <br>
+                <i>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2203.10885">Preprint</a> /
+                <a href="https://github.com/ICTMCG/News-Environment-Perception">Code</a>    
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[DASFAA 2022]</span>&nbsp;&nbsp;<papertitle>Multi-view Multi-behavior Contrastive Learning in Recommendation</papertitle>
+                <br>
+                Yiqing Wu, <a class="black" href="http://nlp.csai.tsinghua.edu.cn/~xrb/">Ruobing Xie</a>, <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://aoxaustin.github.io/">Xiang Ao</a>, Xin Chen, Xu Zhang, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, Leyu Lin, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i>Proceedings of the 27th International Conference on Database Systems for Advanced Applications</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2203.10576.pdf">Preprint</a> /
+                <a href="https://github.com/wyqing20/MMCLR">Code</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[WSDM 2022]</span>&nbsp;&nbsp;<papertitle>Personalized Transfer of User Preferences for Cross-domain Recommendation</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://scholar.google.com/citations?user=iArcf_IAAAAJ">Zhenwei Tang</a>, Yudan Liu, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="http://nlp.csai.tsinghua.edu.cn/~xrb/">Ruobing Xie</a>, Xu Zhang, Leyu Lin, and <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3488560">Proceedings of the 15th ACM International Conference on Web Search and Data Mining</a> (Acceptance rate: 159/786=20.23%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2110.11154.pdf">Preprint</a> /
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3488560.3498392?casa_token=CWJjPn63AtsAAAAA:4uHSvJ1FLx9VwcHjZYjv9RqxrVViSDrzjHfyt_YdUqBCmFF0JlXEeup7BmzBD9xEYFI5qJWvOA8a">Paper</a> /
+                <a href="data/WSDM22_PTUPCDR_poster.pdf">Poster</a> /
+                <a href="data/WSDM22_PTUPCDR_slides.pdf">Slides</a> /
+                <a href="https://github.com/easezyc/WSDM2022-PTUPCDR">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/424643110">Chinese Blog 1</a> /
+                <a href="https://mp.weixin.qq.com/s/sbSnWz9Q1HU_uAnsEOJg-g">2</a> /
+                <a href="https://mp.weixin.qq.com/s/-TwjIHhDPZYp2XonQTNgxw">3</a> /
+                <a href="https://mp.weixin.qq.com/s/ptXY5ETay1qNIJoFeO1qLA">4</a>
+                <br>
+            </td>
+          </tr>
+          <td>
+            <subheading>2021</subheading>
+          </td>
+          <tr>
+            <td valign="center">
+                <span class="tag">[FCS]</span>&nbsp;&nbsp;<papertitle>Combat Data Shift in Few-shot Learning with Knowledge Graph</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=BhRJe4wAAAAJ">Xiangliang Zhang</a>, <a class="black" href="https://scholar.google.com.hk/citations?hl=zh-CN">Zhiyuan Qi</a>, <a class="black" href="https://iec.cnu.edu.cn/szdw/bssds/bssds1/105294.htm">Zhiping Shi</a>, <a class="black" href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ">Juan Cao</a>, and <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://journal.hep.com.cn/fcs/EN/2095-2228/home.shtml">Frontiers of Computer Science</a></i>
+                <br>
+                <a href="https://arxiv.org/pdf/2101.11354.pdf">Preprint</a> / 
+                <a href="https://doi.org/10.1145/3474085.3481548">Paper</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+                <span class="tag">[CIKM 2021]</span>&nbsp;&nbsp;<papertitle>MDFEND: Multi-domain Fake News Detection</papertitle>
+                <br>
+                Qiong Nan, <a class="black" href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ">Juan Cao</a>, <span class="underline">Yongchun Zhu</span>, Yanyan Wang, and Jintao Li
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3459637">Proceedings of the 30th ACM International Conference on Information and Knowledge Management</a> (Acceptance rate: 177/626=28.3%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2201.00987.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3459637.3482139">Paper</a> /
+                <a href="data/CIKM21_MDFEND_poster.pdf">Poster</a> /
+                <a href="https://github.com/kennqiang/MDFEND-Weibo21">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/443690475">Chinese Blog 1</a> /
+                <a href="https://mp.weixin.qq.com/s/_nU0TQewz4u7a20lspNN9A">2 </a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[KDD 2021]</span>&nbsp;&nbsp;<papertitle>Learning to Expand Audience via Meta Hybrid Experts and Critics for Recommendation and Advertising</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, Yudan Liu, <a class="black" href="http://nlp.csai.tsinghua.edu.cn/~xrb/">Ruobing Xie</a>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, Xiaobo Hao, Kaikai Ge, Xu Zhang, Leyu Lin and <a class="black" href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ">Juan Cao</a>
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3447548">Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining</a> (Acceptance rate: 138/705=19.57%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2105.14688.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3447548.3467093">Paper</a> / 
+                <a href="data/KDD21_MetaHeac_poster.pdf">Poster</a> /
+                <a href="data/KDD21_MetaHeac_slides.pdf">Slides</a> /
+                <a href="https://github.com/easezyc/MetaHeac">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/381147789">Chinese Blog 1</a> /
+                <a href="https://mp.weixin.qq.com/s/Pf43BO1wxJkD9jdBScy2zg">2</a> /
+                <a href="https://mp.weixin.qq.com/s/DPto1nVnzRwuF6O9I2gukg">3</a> /
+                <a href="https://mp.weixin.qq.com/s/vjLkSX7ASDOc5vOPqvOiRw">4</a> /
+                <a href="https://mp.weixin.qq.com/s/-TxknuGmRK9R_AJ4wdCsRQ">5</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[KDD 2021]</span>&nbsp;&nbsp;<papertitle>Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising</papertitle>
+                <br>
+                <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, Zhen Chen, Peng Yan, Yinger Zhang, <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a> and Yu Chen
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3447548">Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery & Data Mining</a> (Acceptance rate: 138/705=19.57%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2105.08489.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3447548.3467071">Paper</a> / 
+                <a href="https://github.com/easezyc/Multitask-Recommendation-Library">Code</a> /
+                <a href="https://mp.weixin.qq.com/s/9dNebeb6RSA1bxcADr2HNQ">Chinese Blog</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[SIGIR 2021]</span>&nbsp;&nbsp;<papertitle>Learning to Warm Up Cold Item Embeddings for Cold-start Recommendation with Meta Scaling and Shifting Networks</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="http://nlp.csai.tsinghua.edu.cn/~xrb/">Ruobing Xie</a>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, Kaikai Ge, <a class="black" href="https://scholar.google.com.hk/citations?user=A9L70nUAAAAJ">Ying Sun</a>, Xu Zhang, Leyu Lin and <a class="black" href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ">Juan Cao</a>
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3404835">Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval (Acceptance rate: 151/720=20.97%)</a></i>
+                <br>
+                <a href="https://arxiv.org/pdf/2105.04790.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3404835.3462843">Paper</a> / 
+                <a href="data/SIGIR21_MWUF_slides.pdf">Slides</a> /
+                <a href="https://zhuanlan.zhihu.com/p/375516738">Chinese Blog 1</a> /
+                <a href="https://mp.weixin.qq.com/s/Pkg5AjGoIp6ZY9c68s0x6Q">2</a> /
+                <a href="https://mp.weixin.qq.com/s/xKz8vbdqdwpUQe5HGDLuQQ">3</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[SIGIR 2021]</span>&nbsp;&nbsp;<papertitle>Transfer-Meta Framework for Cross-domain Recommendation to Cold-Start Users</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, Kaikai Ge, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="http://nlp.csai.tsinghua.edu.cn/~xrb/">Ruobing Xie</a>, <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, Xu Zhang, Leyu Lin and <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3404835">Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval</a></i>
+                <br>
+                <a href="https://arxiv.org/pdf/2105.04785.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3404835.3463010">Paper</a> / 
+                <a href="data/SIGIR21_TMCDR_poster.pdf">Poster</a> /
+                <a href="data/SIGIR21_TMCDR_slides.pdf">Slides</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[AAAI 2021]</span>&nbsp;&nbsp;<papertitle>Modeling the Field Value Variations and Field Interactions Simultaneously for Fraud Detection</papertitle>
+                <br>
+                <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=MvmgQFwAAAAJ">Bowen Song</a>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <span class="underline">Yongchun Zhu</span>, Shuai Chen, Tianyi Zhang, <a class="black" href="https://baike.baidu.com/item/%E6%BC%86%E8%BF%9C/22040771?fr=aladdin">Yuan Qi</a>, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://ojs.aaai.org/index.php/AAAI/index">Proceedings of the 35th AAAI Conference on Artificial Intelligence</a> (Acceptance rate: 1692/7911=21.4%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2008.05600.pdf">Preprint</a> / 
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/17755">Paper</a>
+                <br>
+            </td>
+          </tr>
+          <td>
+            <subheading>2020</subheading>
+          </td>
+          <tr>
+            <td valign="center">
+              <span class="tag">[TNNLS]</span>&nbsp;&nbsp;<papertitle>Deep Subdomain Adaptation Network for Image Classification</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="https://jd92.wang/">Jindong Wang</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=M2qJgtoAAAAJ">Guolin Ke</a>, Jingwu Chen, <a class="black" href="https://scholar.google.com.hk/citations?user=pZBEnY8AAAAJ">Jiang Bian</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=cVDF1tkAAAAJ">Hui Xiong</a>, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE Transactions on Neural Networks and Learning Systems</a></i>
+                <br>
+                <a href="https://arxiv.org/pdf/2106.09388.pdf">Preprint</a> / 
+                <a href="https://ieeexplore.ieee.org/abstract/document/9085896">Paper</a> / 
+                <a href="https://github.com/easezyc/deep-transfer-learning">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/254856261">Chinese Blog</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[Proc. IEEE]</span>&nbsp;&nbsp;<papertitle>A Comprehensive Survey on Transfer Learning</papertitle>
+                <br>
+                <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=ssvJqckAAAAJ">Zhiyuan Qi</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=o_mzmd0AAAAJ">Keyu Duan</a>, <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://scholar.google.com.hk/citations?user=55MQBzYAAAAJ">Hengshu Zhu</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=cVDF1tkAAAAJ">Hui Xiong</a>, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5">Proceedings of the IEEE</a></i>
+                <br>
+                <a href="https://arxiv.org/pdf/1911.02685.pdf">Preprint</a> / 
+                <a href="https://ieeexplore.ieee.org/abstract/document/9134370">Paper</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[SIGIR 2020]</span>&nbsp;&nbsp;<papertitle>Neural Hierarchical Factorization Machines for User’s Event Sequence Analysis</papertitle>
+                <br>
+                <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=MvmgQFwAAAAJ">Bowen Song</a>, <span class="underline">Yongchun Zhu</span>, Shuai Chen, Tao Chen, Xi Gu, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3397271">Proceedings of the 43rd international ACM SIGIR Conference on Research and Development in Information Retrieval</a> (Acceptance rate: 153/507=30.2%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2112.15292.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3397271.3401307">Paper</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[WWW 2020]</span>&nbsp;&nbsp;<papertitle>Modeling Users' Behavior Sequences with Hierarchical Explainable Network for Cross-domain Fraud Detection</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=MvmgQFwAAAAJ">Bowen Song</a>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, Shuai Chen, Xi Gu, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://dl.acm.org/doi/proceedings/10.1145/3366423">Proceedings of the 29th Web Conference</a> (Acceptance rate: 217/1129=19.2%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2201.01004.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3366423.3380172">Paper</a> / 
+                <a href="data/WWW20_HEN_slides.pdf">Slides</a> /
+                <a href="https://github.com/easezyc/deep-transfer-learning/tree/master/Application/cross-domain%20fraud%20detection">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/340058927">Chinese Blog</a>
+                <br>
+            </td>
+          </tr>
+          <td>
+            <subheading>2019</subheading>
+          </td>
+          <tr>
+            <td valign="center">
+              <span class="tag">[Neural Networks]</span>&nbsp;&nbsp;<papertitle>Multi-Representation Adaptation Network for Cross-domain Image Classification</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="https://jd92.wang/">Jindong Wang</a>, Jingwu Chen, <a class="black" href="https://iec.cnu.edu.cn/szdw/bssds/bssds1/105294.htm">Zhiping Shi</a>, Wenjuan Wu, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://www.journals.elsevier.com/neural-networks">Neural Networks</a></i>
+                <br>
+                <a href="https://arxiv.org/pdf/2201.01002.pdf">Preprint</a> / 
+                <a href="https://www.sciencedirect.com/science/article/pii/S0893608019301984">Paper</a> / 
+                <a href="https://github.com/easezyc/deep-transfer-learning">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/337440194">Chinese Blog</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[PAKDD 2019]</span>&nbsp;&nbsp;<papertitle>Adaptively transfer category-classifier for handwritten Chinese character recognition</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://xidongbo.github.io/">Dongbo Xi</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=MvmgQFwAAAAJ">Bowen Song</a>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, Shuai Chen, Xi Gu, <a class="black" href="https://scholar.google.com/citations?user=zT-zZucAAAAJ">Qing He</a>
+                <br>
+                <i><a class="black" href="https://link.springer.com/book/10.1007/978-3-030-16148-4">Proceedings of the 23rd Pacific-Asia Conference on Knowledge Discovery and Data Mining</a> (Acceptance rate: 140/567=24.7%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2201.01004.pdf">Preprint</a> / 
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3366423.3380172">Paper</a> / 
+                <a href="data/PAKDD19_slides.pdf">Slides</a>
+                <br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              <span class="tag">[AAAI 2019]</span>&nbsp;&nbsp;<papertitle>Aligning Domain-specific Distribution and Classifier for Cross-domain Classification from Multiple Sources</papertitle>
+                <br>
+                <span class="underline">Yongchun Zhu</span>, <a class="black" href="https://fuzhenzhuang.github.io/">Fuzhen Zhuang</a>, <a class="black" href="https://scholar.google.com.hk/citations?user=NrYqxY4AAAAJ">Deqin Wang</a>
+                <br>
+                <i><a class="black" href="https://ojs.aaai.org/index.php/AAAI/issue/view/246">Proceedings of the 33rd AAAI Conference on Artificial Intelligence</a> (Acceptance rate: 1692/7911=21.4%)</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2201.01003.pdf">Preprint</a> / 
+                <a href="https://ojs.aaai.org/index.php/AAAI/article/view/4551">Paper</a> / 
+                <a href="data/AAAI19_MFSAN_poster.pdf">Poster</a> /
+                <a href="data/AAAI19_MFSAN_slides.pdf">Slides</a> /
+                <a href="https://github.com/easezyc/deep-transfer-learning">Code</a> /
+                <a href="https://zhuanlan.zhihu.com/p/337446240">Chinese Blog</a>
+                <br>
+            </td>
+          </tr>
+        </table>
+        <!-- Publications End -->
+
+        <!-- Profession Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Academic Services</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+              Conference PC Member & Reviewer
+            </td>
+            <td>
+                KDD 2022
+                <br>
+                AAAI 2021, 2022
+                <br>
+                WSDM 2022
+                <br>
+                CIKM 2021
+                <br>
+                ECAI 2020
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+                Journal Reviewer
+            </td>
+            <td>
+                FCS
+                <br>
+                Social Network Analysis and Mining
+            </td>
+          </tr>
+        </table>
+        <!-- Profession End -->
+
+        <!-- Education Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+          <tr>
+            <td>
+              <heading>Education</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+              2020-
+            </td>
+            <td> 
+                Ph.D in Computer Science and Technology (Candidate)
+                <br>
+                <span><a class="black" href="https://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a> (Cultivation Unit: <a class="black" href="http://www.ict.ac.cn/">Institute of Computing Technology</a>, <a class="black" href="http://www.cas.cn/">Chinese Academy of Sciences</a>)</span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2018-2020
+            </td>
+            <td> 
+                M. E. in Computer Science and Technology
+                <br>
+                <span><a class="black" href="https://www.ucas.ac.cn/">University of Chinese Academy of Sciences</a> (Cultivation Unit: <a class="black" href="http://www.ict.ac.cn/">Institute of Computing Technology</a>, <a class="black" href="http://www.cas.cn/">Chinese Academy of Sciences</a>)</span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+              2014-2018
+            </td>
+            <td>
+                B. S. in Computer Science and Technology
+                <br>
+                <span><a class="black" href="https://ai.bnu.edu.cn/">School of Information Science and Technology</a>, <a class="black" href="https://www.bnu.edu.cn/xbyx/index.htm">Beijing Normal University</a></span>
+            </td>
+          </tr>
+        </table>
+        <!-- Education End -->
        
-        <li><a href="/main/">Home</a></li>
-       
-        <li><a href="/pub/">Publication</a></li>
-       
-        <li><a href="/edu/">Education</a></li>
-       
-        <li><a href="/others/">Others</a></li>
-      
-    </ul>
-  </div>
-</header>
-  
+       <!-- Awards Begin -->
+       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="12">
+        <tr>
+          <td>
+            <heading>Honors and Awards</heading>
+          </td>
+        </tr>
+      </table>
+       <ul>
+        <li>2021: National Scholarship(博士国家奖学金).</li>
+        <li>2021: Pacemaker to Merit Student of UCAS(中国科学院大学三好学生标兵).</li>
+        <li>2020: ByteDance Summer Camp Champion(字节跳动夏令营冠军).</li>
+        <li>2020: Merit Student of UCAS(中国科学院大学三好学生).</li>
+        <li>2019: 4Paradigm Scholarship(One of the top scholarships in ICT, CAS)(第四范式奖学金).</li>
+        <li>2019  &amp; 2021: First-class Scholarship of UCAS(中国科学院大学一等奖学金).</li>
+        <li>2018: Beijing Outstanding Graduate (北京市优秀毕业生).</li>
+        <li>2017: Merit Student of BNU(北师大三好学生).</li>
+        <li>2017: Honorable Mention in Mathematical Contest In Modeling(世界大学生数学建模大赛H奖).</li>
+        <li>2016 &amp; 2017: First-class Scholarship of BNU(北师大一等奖学金).</li>
+        <li>2016 &amp; 2017: Competition First-class Scholarship of BNU(北师大竞赛一等奖学金).</li>
+        <li>2017: Excellent League Member of BNU(北师大优秀团员).</li>
+        <li>2016: Third-class prize in Beijing Internet plus entrepreneurship competition(北京市互联网+创业大赛三等奖).</li>
+        <li>2016: Second-class prize in BNU Internet plus entrepreneurship competition(北师大互联网+创业大赛二等奖).</li>
+        <li>2016: National Scholarship(本科国家奖学金).</li>
+        <li>2016: Gold medal in Beijing Challenge Cup competition(北京市挑战杯创业大赛金奖).</li>
+        <li>2016: Volunteer Service Award of BNU(志愿服务奖).</li>
+        <li>2016: Third-class prize in Beijing physics competition(北京市物理竞赛三等奖).</li>
+        <li>2015: Outstanding Student Leaders of BNU(北师大优秀学生干部).</li>
+        </ul>
+        <!-- Awards End -->
 
-    
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <div class="content" itemprop="articleBody">
-  
-    <h1 id="about-me">About me</h1>
-<p>I am a 4th-year PhD candidate under the supervision of Prof. Juan Cao and Prof. Fuzhen Zhuang at Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS).</p>
-<p>My research focuses on Machine Learning and Data Mining. In particular, I am working on Transfer Learning, Meta Learning, and their application Recommender Systems.</p>
-<p>Email: <a href="mailto:zhuyongchun18s@ict.ac.cn">zhuyongchun18s@ict.ac.cn</a> &amp; <a href="mailto:zhuyc0204@gmail.com">zhuyc0204@gmail.com</a></p>
-<h1 id="publications">Publications</h1>
-<ul>
-<li>
-  <p><strong>Zoom Out and Observe: News Environment Perception for Fake News Detection</strong> (Acceptance rate: /=%)<br>
-    Qiang Sheng, Juan Cao, Xueyao Zhang, Rundong Li, Danding Wang, and <strong>Yongchun Zhu</strong>.<br>
-  In <strong>ACL</strong> 2022. [<a href="https://arxiv.org/pdf/2203.10885.pdf">Download paper</a>] [<a href="https://github.com/ICTMCG/News-Environment-Perception/">Code</a>]</p>
-</li>
-<li>
-  <p><strong>Multi-view Multi-behavior Contrastive Learning in Recommendation</strong> (Acceptance rate: /=%)<br>
-    Yiqing Wu, Ruobing Xie, <strong>Yongchun Zhu</strong>, Xiang Ao, Xin Chen, Xu Zhang, Fuzhen Zhuang, Leyu Lin, Qing He.<br>
-  In <strong>DASFAA</strong> 2022. [<a href="https://arxiv.org/pdf/2203.10576.pdf">Download paper</a>] [<a href="https://github.com/wyqing20/MMCLR">Code</a>]</p>
-</li>
-<li>
-  <p><strong>Personalized Transfer of User Preferences for Cross-domain Recommendation</strong> (Acceptance rate: 159/786=20.23%)<br>
-  <strong>Yongchun Zhu</strong>, Zhenwei Tang, Yudan Liu, Fuzhen Zhuang, Ruobing Xie, Xu Zhang, Leyu Lin, and Qing He.<br>
-  In <strong>WSDM</strong> 2022. [<a href="https://arxiv.org/pdf/2110.11154.pdf">Download paper</a>] [<a href="https://github.com/easezyc/WSDM2022-PTUPCDR">Code</a>]</p>
-</li>
-<li>
-  <p><strong>MDFEND: Multi-domain Fake News Detection</strong> (Acceptance rate: 177/626=28.3%)<br> 
-  Qiong Nan, Juan Cao, <strong>Yongchun Zhu</strong>, Yanyan Wang, and Jintao Li.<br>
-  In <strong>CIKM</strong> 2021. [<a href="data/cikm21_mdfend.pdf">Download paper</a>] [<a href="https://github.com/kennqiang/MDFEND-Weibo21">Code</a>]</p>
-</li>
-<li>
-  <p><strong>Combat Data Shift in Few-shot Learning with Knowledge Graph</strong><br>
-  <strong>Yongchun Zhu</strong>, Fuzhen Zhuang, Xiangliang Zhang, Zhiyuan Qi, Zhiping Shi, Juan Cao, and Qing He.<br>
-  In <strong>FCS</strong> 2021. [<a href="https://arxiv.org/pdf/2101.11354.pdf">Download paper</a>]</p>
-</li>
-<li>
-  <p><strong>Learning to Expand Audience via Meta Hybrid Experts and Critics for Recommendation and Advertising</strong> (Acceptance rate: 138/705=19.57%)<br>
-  <strong>Yongchun Zhu</strong>, Yudan Liu, Ruobing Xie, Fuzhen Zhuang, Xiaobo Hao, Kaikai Ge, Xu Zhang, Leyu Lin and Juan Cao.<br>
-  In <strong>KDD</strong> 2021. [<a href="data/kdd21_metaheac.pdf">Download paper</a>] [<a href="https://github.com/easezyc/MetaHeac">Code</a>]</p>
-</li>
-<li>
-  <p><strong>Modeling the Sequential Dependence among Audience Multi-step Conversions with Multi-task Learning in Targeted Display Advertising</strong> (Acceptance rate: 138/705=19.57%)<br>
-  Dongbo Xi, Zhen Chen, Peng Yan, Yinger Zhang, <strong>Yongchun Zhu</strong>, Fuzhen Zhuang and Yu Chen.<br>
-  In <strong>KDD</strong> 2021. [<a href="data/kdd21_aitm.pdf">Download paper</a>]</p>
-</li>
-<li>
-  <p><strong>Learning to Warm Up Cold Item Embeddings for Cold-start Recommendation with Meta Scaling and Shifting Networks</strong> (Acceptance rate: 151/720=20.97%)<br>
-  <strong>Yongchun Zhu</strong>, Ruobing Xie, Fuzhen Zhuang, Kaikai Ge, Ying Sun, Xu Zhang, Leyu Lin and Juan Cao.<br>
-  In <strong>SIGIR</strong> 2021. [<a href="data/sigir21_mwuf.pdf">Download paper</a>]</p>
-</li>
-<li>
-  <p><strong>Transfer-Meta Framework for Cross-domain Recommendation to Cold-Start Users</strong> (Acceptance rate: 145/526=27.6%)<br>
-  <strong>Yongchun Zhu</strong>, Kaikai Ge, Fuzhen Zhuang, Ruobing Xie, Dongbo Xi, Xu Zhang, Leyu Lin and Qing He.<br>
-  In <strong>SIGIR</strong> 2021. [<a href="data/sigir21_tmcdr.pdf">Download paper</a>]</p>
-</li>
-<li>
-  <p><strong>Deep Subdomain Adaptation Network for Image Classification</strong><br>
-  <strong>Yongchun Zhu</strong>, Fuzhen Zhuang, Jindong Wang, Guolin Ke, Jingwu Chen, Jiang Bian, Hui Xiong, Qing He.<br>
-  In <strong>TNNLS</strong> 2021. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9085896">Download paper</a>] [<a href="https://github.com/easezyc/deep-transfer-learning/tree/master/UDA/pytorch1.0/DSAN">Code</a>]</p>
-</li>
-<li>
-<p><strong>Modeling the Field Value Variations and Field Interactions Simultaneously for Fraud Detection</strong> (Acceptance rate: 1692/7911=21.4%)<br>
-Dongbo Xi, Bowen Song, Fuzhen Zhuang, <strong>Yongchun Zhu</strong>, Shuai Chen, Tianyi Zhang, Yuan Qi, Qing He.<br>
-In <strong>AAAI</strong> 2021. [<a href="https://arxiv.org/abs/2008.05600">Download paper</a>]</p>
-</li>
-<li>
-<p><strong>Modeling Users' Behavior Sequences with Hierarchical Explainable Network for Cross-domain Fraud Detection</strong> (Acceptance rate: 217/1129=19.2%)<br>
-<strong>Yongchun Zhu</strong>, Dongbo Xi, Bowen Song, Fuzhen Zhuang, Shuai Chen, Xi Gu, Qing He.<br>
-In <strong>TheWebConf</strong> 2020. [<a href="https://dl.acm.org/doi/pdf/10.1145/3366423.3380172">Download paper</a>]</p>
-</li>
-<li>
-<p><strong>A Comprehensive Survey on Transfer Learning</strong><br>
-Fuzhen Zhuang, Zhiyuan Qi, Keyu Duan, Dongbo Xi, <strong>Yongchun Zhu</strong>, Hengshu Zhu, Hui Xiong, Qing He.<br>
-In <strong>Proc. IEEE</strong> 2020. [<a href="https://ieeexplore.ieee.org/abstract/document/9134370">Download paper</a>]</p>
-</li>
-<li>
-<p><strong>Neural Hierarchical Factorization Machines for User&rsquo;s Event Sequence Analysis</strong> (Acceptance rate: 153/507=30.2%)<br>
-Dongbo Xi, Fuzhen Zhuang, Bowen Song, <strong>Yongchun Zhu</strong>, Shuai Chen, Tao Chen, Xi Gu, Qing He.<br>
-In <strong>SIGIR</strong> 2020. [<a href="https://dl.acm.org/doi/pdf/10.1145/3397271.3401307">Download paper</a>]</p>
-</li>
-<li>
-<p><strong>Multi-Representation Adaptation Network for Cross-domain Image Classification</strong><br>
-<strong>Yongchun Zhu</strong>, Fuzhen Zhuang, Jindong Wang, Jingwu Chen, Qing He.<br>
-In <strong>Neural Network</strong> 2019. [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608019301984">Download paper</a>] [<a href="https://github.com/easezyc/deep-transfer-learning/tree/master/UDA/pytorch1.0/MRAN">Code</a>]</p>
-</li>
-<li>
-  <p><strong>Adaptively transfer category-classifier for handwritten Chinese character recognition</strong> (Acceptance rate: 140/567=24.7%)<br>
-  <strong>Yongchun Zhu</strong>, Fuzhen Zhuang, Jingyuan Yang, Xi Yang and Qing He.<br>
-  In <strong>PAKDD</strong> 2019. [<a href="https://link.springer.com/chapter/10.1007/978-3-030-16148-4_9">Download paper</a>] </p>
-  </li>
-<li>
-<p><strong>Aligning Domain-specific Distribution and Classifier for Cross-domain Classification from Multiple Sources</strong> (Acceptance rate: 1150/7095=16.2%)<br>
-<strong>Yongchun Zhu</strong>, Fuzhen Zhuang, Deqin Wang.<br>
-In <strong>AAAI</strong> 2019. [<a href="https://www.aaai.org/ojs/index.php/AAAI/article/download/4551/4429">Download paper</a>]  [<a href="https://github.com/easezyc/deep-transfer-learning/tree/master/MUDA/MFSAN">Code</a>]</p>
-</li>
-</ul>
-<h1 id="projects">Projects</h1>
-<ul>
-<li>
-<p>2020-: <strong>Tencent school-enterprise cooperation project</strong><br>
-We focus on the cold-start problem in recommender systems(Wechat Top Stories), and our work has been submitted to AAAI2021.</p>
-</li>
-<li>
-<p>2019-2020: <strong>Ant Financial Security Special Research Fund</strong><br>
-We focus on the fraud detection tasks in a world-leading cross-border e-commerce platform Lazada. We not only solve the fraud detection task in one country, but also cross-border fraud detection. Our work has been accepted by <strong>TheWebConf2020</strong> and <strong>SIGIR2020</strong>. Besides, we won <strong>the first place</strong> in the Ant Financial Security Special Research Fund(1/19).</p>
-</li>
-</ul>
-<h1 id="internships">Internships</h1>
-<ul>
-<li>Research intern at Wechat, 2020.</li>
-<li>Research intern at Ant Financial Services Group, 2019.</li>
-<li>Research intern at Microsoft Research Asia, 2018.</li>
-</ul>
-<h1 id="selected-awards">Selected awards</h1>
-<ul>
-<li>2020: ByteDance Summer Camp Champion(字节跳动夏令营冠军).</li>
-<li>2020: Merit Student of ICT(中科院计算所三好学生).</li>
-<li>2019: 4Paradigm Scholarship(One of the top scholarships in ICT, CAS)(第四范式奖学金).</li>
-<li>2019: First-class Scholarship of CAS(中科院一等奖学金).</li>
-<li>2018: Beijing Outstanding Graduate (北京市优秀毕业生).</li>
-<li>2017: Merit Student of BNU(北师大三好学生).</li>
-<li>2016 &amp; 2017: First-class Scholarship of BNU(北师大一等奖学金).</li>
-<li>2016 &amp; 2017: Competition First-class Scholarship of BNU(北师大竞赛一等奖学金).</li>
-<li>2016: National Scholarship(国家奖学金).</li>
-<li>2016: Gold medal in Beijing Challenge Cup competition(北京市挑战杯创业大赛金奖).</li>
-</ul>
-
-  
-  </div>
-</article>
-
-
-    <footer id="footer">
-  <div class="footer-left">
-    Copyright  &copy; 2020  Yongchun Zhu 
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-         
-        <li><a href="/main/">Home</a></li>
-         
-        <li><a href="/pub/">Publication</a></li>
-         
-        <li><a href="/edu/">Education</a></li>
-         
-        <li><a href="/others/">Others</a></li>
-        
-      </ul>
-    </nav>
-  </div>
-</footer>
-
-
-  </div>
-  
-    
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-178131288-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-    
-  
+        <table width="100%" align="center" border="0" cellpadding="12">
+          <tr>
+            <td width="100%" valign="center">
+              <p class="footer">
+                Design: <a href="https://jonbarron.info/" target="_blank" style="color: #777; font-size: 14px;">Jon Barron</a> and <a href="https://liminyang.web.illinois.edu/  " target="_blank" style="color: #777; font-size: 14px;">Limin Yang</a> <br>
+              Last updated:
+                <script>
+                  t = new Date(document.lastModified).toLocaleDateString()
+                  document.write(t);
+                </script>
+               &nbsp;&nbsp;
+               <span id="busuanzi_container_site_pv">#Visit: <span id="busuanzi_value_site_pv"></span> (2021/8/2~)</span>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-<script src="/lib/jquery/jquery.min.js"></script>
-<script src="/js/main.js"></script>
 </html>
